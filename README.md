@@ -52,7 +52,7 @@ src
 
 This project does not connect to any backend and users are handled locally using localStorage. To take this to production there it's advised to remove the parts of the auth context that handles users locally.
 
-IMPORTANT:
+**IMPORTANT:**
 
 To connect to the API create a free account at https://www.vboxrecognizer.com and once you've created your app add the api*key and app_id in your .env.local and make sure the names are prefixed with NEXT_PUBLIC* (e.g. NEXT_PUBLIC_API_KEY) and make sure that your .env.local is in the .gitignore.
 
