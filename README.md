@@ -56,4 +56,4 @@ IMPORTANT:
 
 To connect to the API create a free account at https://www.vboxrecognizer.com and once you've created your app add the api*key and app_id in your .env.local and make sure the names are prefixed with NEXT_PUBLIC* (e.g. NEXT_PUBLIC_API_KEY) and make sure that your .env.local is in the .gitignore.
 
-For more in depth API documentation visit https://v1docs.vboxrecognizer.co.za
+For more in depth API documentation visit [https://v1docs.vboxrecognizer.co.za](https://v1docs.vboxrecognizer.com/#introduction)
