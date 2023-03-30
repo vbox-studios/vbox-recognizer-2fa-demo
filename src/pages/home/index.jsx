@@ -21,7 +21,7 @@ const Home = () => {
           />
           <Spacer y={1.5} />
           <Text css={{ textAlign: "center" }}>
-            Thank you for trying out the VBOX. Recognizer 2FA demo! We'd
+            Thank you for trying out the VBOX. Recognizer 2FA demo! We&apos;d
             appreciate your feedback.
           </Text>
           <Spacer y={1} />

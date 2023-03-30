@@ -12,7 +12,7 @@ const Success = () => {
         <Card>
           <Text h3>Success!</Text>
           <Image src={SuccessImage} alt="success image" width={200} />
-          <Text>You've successfully created your account!</Text>
+          <Text>You&apos;ve successfully created your account!</Text>
           <Link href="/login">Proceed to Log In →</Link>
         </Card>
       </div>
