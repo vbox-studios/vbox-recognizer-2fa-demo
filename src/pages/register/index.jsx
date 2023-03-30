@@ -79,7 +79,7 @@ export default function Register() {
       <div className={styles.mainContainer}>
         <Card>
           <Text h2>Register</Text>
-          <Text>Let's get started by creating your account!</Text>
+          <Text>Let&apos;s get started by creating your account!</Text>
           <Spacer y={2} />
           <form onSubmit={handleSubmit}>
             <Input
