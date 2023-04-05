@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const recogApi = axios.create({
-  baseURL: "https://v1.vboxrecognizer.com/",
+  baseURL: "https://vbox-recognizer.p.rapidapi.com/",
   headers: {
     "Content-Type": "application/json",
   },

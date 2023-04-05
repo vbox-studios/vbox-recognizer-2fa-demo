@@ -27,8 +27,9 @@ const RegisterCamera = ({ setPage, page, currentUser, handleClose }) => {
         },
         {
           headers: {
-            app_id: process.env.NEXT_PUBLIC_APP_ID,
-            app_key: process.env.NEXT_PUBLIC_RECOG_KEY,
+            "X-RapidAPI-Key":
+              "8df8ab70b7msh0c987753ad5356dp1690d4jsn743ac97bd6e8",
+            "X-RapidAPI-Host": "vbox-recognizer.p.rapidapi.com",
           },
         }
       )

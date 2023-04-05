@@ -24,8 +24,8 @@ const LoginCamera = ({ handleClose }) => {
         },
         {
           headers: {
-            app_id: process.env.NEXT_PUBLIC_APP_ID,
-            app_key: process.env.NEXT_PUBLIC_RECOG_KEY,
+            "X-RapidAPI-Key": NEXT_PUBLIC_RAPID_API_KEY,
+            "X-RapidAPI-Host": NEXT_PUBLIC_RAPID_API_HOST,
           },
         }
       )
