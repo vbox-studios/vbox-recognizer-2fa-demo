@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import RootLayout from "@/layouts/layout";
 import Card from "@/components/Card/Card";
 import BorderedButton from "@/components/BorderedButton/BorderedButton";
@@ -8,6 +8,29 @@ import People from "./../../../public/img/header-img.svg";
 import styles from "@/styles/auth.module.css";
 import Link from "next/link";
 const Home = () => {
+  const [user, setUser] = useState();
+
+  useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem("currentRegisteredUser")));
+  }, []);
+
+  const deleteData = () => {
+    recogApi.post(
+      `/remove_user`,
+      {
+        identifier: `${user.name} ${user.surname}`,
+        group_name: "Auth Test",
+      },
+      {
+        headers: {
+          "X-RapidAPI-Key":
+            "8df8ab70b7msh0c987753ad5356dp1690d4jsn743ac97bd6e8",
+          "X-RapidAPI-Host": "vbox-recognizer.p.rapidapi.com",
+        },
+      }
+    );
+  };
+
   return (
     <RootLayout>
       <div className={styles.mainContainer}>
@@ -29,6 +52,9 @@ const Home = () => {
             Create a free account and get in touch with us via your dashboard.
           </Text>
           <Spacer y={1.5} />
+          <BorderedButton onClick={() => deleteData()}>
+            Delete Facial Data
+          </BorderedButton>
           <Link href="https://www.vboxrecognizer.com">
             Create a free account!
           </Link>

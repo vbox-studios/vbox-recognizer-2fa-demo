@@ -13,9 +13,6 @@ const RegisterCamera = ({ setPage, page, currentUser, handleClose }) => {
 
   const submitHandler = (image) => {
     setLoading(true);
-    console.log(currentUser);
-    console.log(process.env.NEXT_PUBLIC_APP_ID);
-    console.log(image);
 
     recogApi
       .post(
@@ -57,9 +54,11 @@ const RegisterCamera = ({ setPage, page, currentUser, handleClose }) => {
       })
       .catch((err) => console.log(err));
   };
+
   const closeHandler = () => {
     handleClose();
   };
+
   return (
     <div
       style={{
